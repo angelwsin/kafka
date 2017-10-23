@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>kafka</groupId>
-  <artifactId>kafka</artifactId>
+  <groupId>kafka-Consumer</groupId>
+  <artifactId>kafka-Consumer</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>kafka</name>
+  <name>kafka-Consumer</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -21,6 +21,16 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+  <dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-log4j12</artifactId>
+    <version>1.7.25</version>
+</dependency>
+ <dependency>
+    <groupId>org.apache.kafka</groupId>
+    <artifactId>kafka-clients</artifactId>
+    <version>0.11.0.1</version>
+ </dependency>
   </dependencies>
   <build>
     <plugins>
