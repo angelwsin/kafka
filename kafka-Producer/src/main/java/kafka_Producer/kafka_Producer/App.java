@@ -30,7 +30,7 @@ public class App
     	 try(Producer<String, String> producer = new KafkaProducer<>(props);) {
     		 for(int i=0;i<10;i++){
     			 //send Asynchronously send a record to a topic and invoke the provided callback when the send has been acknowledged.
-    			 Future<RecordMetadata> result =producer.send(new ProducerRecord<String, String>("my-topic", Integer.toString(i), Integer.toString(i))) ;
+    			 Future<RecordMetadata> result =producer.send(new ProducerRecord<String, String>("connect-test", Integer.toString(i), Integer.toString(i))) ;
     			 //同步等待 result.get();  确认
     			 
     			 
