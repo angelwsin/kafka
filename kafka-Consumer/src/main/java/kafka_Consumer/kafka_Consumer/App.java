@@ -23,7 +23,7 @@ public class App
         props.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
         KafkaConsumer<String, String> consumer = new KafkaConsumer<>(props);
         // topics
-        consumer.subscribe(Arrays.asList("my-topic"));
+        consumer.subscribe(Arrays.asList("connect-test"));//  my-topic
         while (true) {
         	// The time, in milliseconds   outtime
             ConsumerRecords<String, String> records = consumer.poll(100);

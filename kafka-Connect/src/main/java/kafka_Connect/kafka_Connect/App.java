@@ -1,14 +1,22 @@
 package kafka_Connect.kafka_Connect;
 
+import org.apache.kafka.connect.cli.ConnectStandalone;
+
 /**
- * Hello world!
+ * Connect API允许实现连续从某些源数据系统拉入Kafka的连接器，或者从Kafka推送到某些sink数据系统。
  *
  */
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+    	
+    	try {
+			ConnectStandalone.main(args);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     }
     
 /*    Connectors and Tasks
