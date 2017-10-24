@@ -31,5 +31,29 @@ public class App
     connectors 分两种
     :input SourceConnectors    SourceTask
     :output  SinkConnectors     SinkTask
+    
     		*/
+    
+    
+    /**
+     * 
+     * connect 执行顺序
+     * 
+     * ConnectStandalone  模式
+     * 
+     *  配置 connect-standalone.properties  
+     *  connect 配置  如 文件 connect-file-source.properties
+     *  
+     *  启动 rest ful server  jetty 
+     *  启动Worker Worker runs a (dynamic) set of tasks in a set of threads, doing the work of actually moving data to/from Kafka.
+     *  
+     *  Connect 组合启动服务
+     *   
+     *   
+     *   worker 启动
+     *             WorkerTask  线程  任务处理在 Task.poll方法
+     *   
+     *  
+     *  
+     */
 }

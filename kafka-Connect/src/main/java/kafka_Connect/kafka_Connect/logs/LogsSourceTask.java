@@ -20,6 +20,7 @@ public class LogsSourceTask extends SourceTask{
 		
 	}
 
+	// WorkerTask 真正执行的 逻辑   取出数据 解析 组合成 SourceRecord 
 	@Override
 	public List<SourceRecord> poll() throws InterruptedException {
 		// TODO Auto-generated method stub

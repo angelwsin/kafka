@@ -20,6 +20,7 @@ public class HdfsSinkTask extends SinkTask{
 		
 	}
 
+	//真正的 put 数据到指定的系统 如 hdfs
 	@Override
 	public void put(Collection<SinkRecord> records) {
 		// TODO Auto-generated method stub
