@@ -24,6 +24,7 @@ public class App
         KafkaConsumer<String, String> consumer = new KafkaConsumer<>(props);
         // topics
         consumer.subscribe(Arrays.asList("connect-test"));//  my-topic
+        
         while (true) {
         	// The time, in milliseconds   outtime
             ConsumerRecords<String, String> records = consumer.poll(100);
